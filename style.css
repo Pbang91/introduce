@@ -1,35 +1,21 @@
 body{
   background-color: #ffebcd;
-}
-div{
   text-align: center;
-  font-style: italic;
-
 }
-h1, h2{
+h1{
   border: 50px;
   padding: 10px;
   margin: 30px;
   margin-bottom: 10px;
-  font-size: 37px;
 }
 h3{
-  padding: 50px;
-  margin: 50px;
+  padding: 20px;
+  margin: 20px;
 }
 a{
   color: black;
   text-decoration: none;
 }
-#name{
-  font-size: 25px;
-  padding: 30px;
-}
-#live{
-  font-size: 25px;
-  padding: 30px;
-}
-#married{
-  font-size: 25px;
-  padding: 30px;
+.myself{
+  border: double black 50px;
 }
