@@ -95,7 +95,19 @@
         margin-right: 10px;
         margin-bottom: 15px;
       }
-
+      #saw:checked ~.submenu{
+        display: block;
+      }
+      .submenu{
+        display: none;
+        background: #ccc;
+        background-color: rgb(253, 227, 251);
+        font-size: 15px;
+      }
+      input{
+        position: fixed;
+        left: -9999px;
+      }
     </style>
 
 
@@ -108,9 +120,12 @@
         <span id="hope">Back-end Developer</span>
 
         <ul class="contact">
-          <li><img src="mobile-phone.png" width="50px" height="42px"</li>
-          <li><img src="email.png" width="40px" height="45px"></li>
-          <li><img src="github.png" width="40px" height="45px"></li>
+          <li><input type="checkbox" id="saw">
+              <label for="saw" class="labelbtn" onclick=""><img src="mobile-phone.png" width="50px" height="42px"></label>
+                <span class="submenu">010-1234-5678</span>
+          </li>
+          <li><a href="mailto:holyja91@gmail.com" alt="send-email"> <img src="email.png" width="40px" height="45px"></a></li>
+          <li><a href="https://github.com/Pbang91" target="_blank" alt="go-git"><img src="github.png" width="40px" height="45px"></a></li>
         </ul>
     </div>
 
@@ -122,6 +137,7 @@
         </div>
 
       <h1>Profile</h1>
+      <img class="icon" src="hi.png" width="30px" height="35px" alt="hi-icon">
       <p>
         안녕하세요. 저는 BE개발자를 꿈꾸며 공부하는 <span class="bold">박건규</span> 입니다.<br>
         동기분들과의 소통에 힘쓰며 항상 구글과 함께 하겠습니다 : )<br>
