@@ -1,164 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>About Me</title>
-    <style>
-      @font-face{
-        font-family: nanum;
-        src:url(Nanum_fonts/NanumSquareRoundl.ttf) format('truetype');
-      }
-      body{
-        margin: 0;
-        font-family: nanum;
-        font-weight: bold;
 
-      }
-      #grid{
-        display: grid;
-        grid-template-columns: 200px 1fr;
-      }
-      #about{
-        border: solid 2px black;
-        border-style: none;
-        width: 300px;
-        height: 1000px;
-        text-align: center;
-        padding: 5px;
-        padding-bottom: 10px;
-        background-color: rgb(253, 227, 251);
-      }
-      .contact{
-        list-style: none;
-        padding-left: 12px;
-        font-size: 12px;
-        margin: 30px;
-      }
-      #site{
-        border: 1px rgb(253, 227, 251);
-        border-style: hidden hidden solid;
-        padding: 20px;
+<head>
+  <meta charset="utf-8">
+  <title>About Me</title>
+  <style>
+    @font-face {
+      font-family: nanum;
+      src: url(Nanum_fonts/NanumSquareRoundl.otf) format('opentype'),
+           url(Nanum_fonts/NanumSquareRoundl.ttf) format('truetype');
+    }
 
-      }
-      #name{
-        display: block;
-        padding: 5px;
-        font-weight: bold;
-      }
-      #hope{
-        display: block;
-        border: 3px white;
-        border-style: hidden hidden dashed;
-        padding: 5px;
-        margin: 10px;
-        margin-left: 20px;
-        width: 250px;
-        font-weight: bold;
-      }
-      img:first-child{
-        padding: 10px;
-        margin: 10px;
-      }
+    body {
+      margin: 0;
+      font-family: 'nanum', serif;
+      font-weight: bold;
 
-      #info{
-        margin-left: 50px;
-        padding-top: 50px;
-        padding-left: 200px;
-        width: 1200px;
-      }
-      h1{
-        border: solid 2px rgb(253, 227, 251);
-        border-radius: 15px;
-        padding: 2px;
-        text-align: center;
-        font-size: 19px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      a{
-        text-decoration: none;
-        color: black;
-      }
-      p{
-        padding: 45px;
-      }
-      .site-datails{
-        padding: 10px;
-        width: 500px;
-      }
-      .bold{
-        font-weight: 900;
-      }
-      .icon{
-        float: left;
-        margin-top: 40px;
-        margin-right: 10px;
-        margin-bottom: 15px;
-      }
-      #saw:checked ~.submenu{
-        display: block;
-      }
-      .submenu{
-        display: none;
-        background: #ccc;
-        background-color: rgb(253, 227, 251);
-        font-size: 15px;
-      }
-      input{
-        position: fixed;
-        left: -9999px;
-      }
-    </style>
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-
-  </head>
-  <body>
-    <div id="grid">
+<body>
+  <div id="grid">
     <div id="about">
       <img src="img.jpg" alt="it's me" title="It's Me!" width="250px" height="350px">
-        <span id="name">Park Geon gue(Barney)</span>
-        <span id="hope">Back-end Developer</span>
+      <span id="name">Park Geon gue(Barney)</span>
+      <span id="hope">Back-end Developer</span>
 
-        <ul class="contact">
-          <li><input type="checkbox" id="saw">
-              <label for="saw" class="labelbtn" onclick=""><img src="mobile-phone.png" width="50px" height="42px"></label>
-                <span class="submenu">010-1234-5678</span>
-          </li>
-          <li><a href="mailto:holyja91@gmail.com" alt="send-email"> <img src="email.png" width="40px" height="45px"></a></li>
-          <li><a href="https://github.com/Pbang91" target="_blank" alt="go-git"><img src="github.png" width="40px" height="45px"></a></li>
-        </ul>
+      <ul class="contact">
+        <li><input type="checkbox" id="saw">
+          <label for="saw" class="labelbtn" onclick=""><img src="mobile-phone.png" width="55px" height="42px"></label>
+          <span class="submenu">010-1234-5678</span>
+        </li>
+        <li><a href="mailto:holyja91@gmail.com" alt="send-email"> <img src="email.png" width="45px" height="45px"></a></li>
+        <li><a href="https://github.com/Pbang91" target="_blank" alt="go-git"><img src="github.png" width="45px" height="45px"></a></li>
+      </ul>
     </div>
-
-    <div id="info">
+    <div id="all">
+      <div id="info">
 
         <div id="site">
           <span class="site-datails"><a href="introduce.html" alt="home">HOME</a></span>
           <span class="site-datails"><a href="resume.html" alt="resume">RESUME</a></span>
         </div>
 
-      <h1>Profile</h1>
-      <img class="icon" src="hi.png" width="30px" height="35px" alt="hi-icon">
-      <p>
-        안녕하세요. 저는 BE개발자를 꿈꾸며 공부하는 <span class="bold">박건규</span> 입니다.<br>
-        동기분들과의 소통에 힘쓰며 항상 구글과 함께 하겠습니다 : )<br>
-        잘부탁드립니다.
-      </p>
-      <h1>Education</h1>
-      <img class="icon"src="graduate.png" width="30px" alt="graduate-icon">
-      <p>
-        2021-12 ~ 2022-04<br>
-        위코드 부트캠프<br>
-        현재 <span class="bold">진행중</span> 입니다.
-      </p>
-      <h1>Work Experience</h1>
-      <img class="icon" src="suitcase.png" width="28px" alt="suitcase-icon">
-      <p>
-        2017-05 ~ 2021-10<br>
-        상장사 회계직
-      </p>
-      <h1>Skils</h1>
-
+        <h1>Profile</h1>
+        <img class="icon" src="hi.png" width="30px" height="35px" alt="hi-icon">
+        <p>
+          안녕하세요. 저는 BE개발자를 꿈꾸며 공부하는 <span class="bold">박건규</span> 입니다.<br>
+          동기분들과의 소통에 힘쓰며 항상 구글과 함께 하겠습니다 : )<br>
+          잘부탁드립니다.
+        </p>
+        <h1>Education</h1>
+        <img class="icon" src="graduate.png" width="30px" alt="graduate-icon">
+        <p>
+          2021-12 ~ 2022-04<br>
+          위코드 부트캠프<br>
+          현재 <span class="bold">진행중</span> 입니다.
+        </p>
+        <h1>Work Experience</h1>
+        <img class="icon" src="suitcase.png" width="28px" alt="suitcase-icon">
+        <p>
+          2017-05 ~ 2021-10<br>
+          상장사 회계직
+        </p>
+        <h1>Skils</h1>
+      </div>
+      <div id="bottom">
+      </div>
     </div>
   </div>
-  </body>
+</body>
 </html>
