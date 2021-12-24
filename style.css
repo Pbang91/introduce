@@ -7,7 +7,6 @@
   #about {
     border: solid 2px black;
     border-style: none;
-    height: 998px;
     text-align: center;
     padding: 5px;
     padding-bottom: 10px;
@@ -115,7 +114,7 @@
   }
   #all{
     display: grid;
-    grid-template-rows: 2;
+    grid-template-rows: 14fr 1fr;
   }
 }
 
@@ -127,7 +126,6 @@
 #about {
   border: solid 2px black;
   border-style: none;
-  height: 998px;
   text-align: center;
   padding: 5px;
   padding-bottom: 10px;
@@ -233,5 +231,5 @@ input {
 }
 #all{
   display: grid;
-  grid-template-rows: 2;
+  grid-template-rows: 14fr 1fr;
 }
